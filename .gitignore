@@ -3,3 +3,15 @@
 
 # Ada Library Information
 *.ali
+
+b__*.ad[sb]
+gpsauto.cgpr
+*.stderr
+*.stdout
+gnatinspect.db
+*.bexch
+*loc.xml
+
+applet/dsa/bin
+applet/dsa/dsa
+launch_ddc_fused
