@@ -11,6 +11,8 @@ gpsauto.cgpr
 gnatinspect.db
 *.bexch
 *loc.xml
+gnatinspect.db-shm
+gnatinspect.db-wal
 
 applet/dsa/bin
 applet/dsa/dsa
