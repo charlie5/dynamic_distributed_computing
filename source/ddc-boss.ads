@@ -13,10 +13,8 @@ is
    -- Remote views.
    --
 
-   type remote_Worker  is access all DDC.Worker.item'Class;
-   type remote_Workers is array (Positive range <>) of remote_Worker;
-
-   pragma Asynchronous (remote_Worker);
+   type remote_Worker  is access all DDC.Worker.item'Class
+     with Asynchronous => True;
 
 
    -- Operations
@@ -30,4 +28,3 @@ is
                              From   : in remote_Worker);
 
 end DDC.Boss;
-

@@ -1,11 +1,10 @@
-rm bin/*
-
+rm -fr bin
 rm -fr dsa
-rm -fr build/*
+rm -fr build
 
 gprclean -r -P ../fused/ddc_fused.gpr
 
 rm *.o
 rm *.ali
 
-po_gnatdist -P ddc_dsa.gpr   ddc_dsa.cfg   -cargs -g  -bargs   -largs -g
+po_gnatdist -p -P ddc_dsa.gpr   ddc_dsa.cfg   -cargs -g  -bargs   -largs -g
